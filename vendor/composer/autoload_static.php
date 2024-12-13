@@ -43,6 +43,10 @@ class ComposerStaticInit7b8e0778148a33b08d44845dcd410d32
             'Psr\\Clock\\' => 10,
             'PHPFramework\\' => 13,
         ),
+        'L' => 
+        array (
+            'Laravel\\SerializableClosure\\' => 28,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -118,11 +122,15 @@ class ComposerStaticInit7b8e0778148a33b08d44845dcd410d32
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),
+        'Laravel\\SerializableClosure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/macroable',
+            0 => __DIR__ . '/..' . '/illuminate/collections',
             1 => __DIR__ . '/..' . '/illuminate/conditionable',
-            2 => __DIR__ . '/..' . '/illuminate/collections',
+            2 => __DIR__ . '/..' . '/illuminate/macroable',
             3 => __DIR__ . '/..' . '/illuminate/support',
         ),
         'Illuminate\\Database\\' => 

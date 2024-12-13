@@ -4,10 +4,13 @@ namespace App\Models;
 
 use PHPFramework\Model;
 
-class User extends Model
+class User extends Model //здесь указываются уникальные аттрибуты модели
 {
 
-    protected $fillable = ['name', 'email', 'password', 'confirmPassword'];
+    protected $table = 'users'; //ларавель поддерживает конвекцию для таблицы с таким именем, следовательно данная запись нужна только в случае если таблица называется по другому
+    public $timestamps = true; //необходимо для того, чтобы не возникало ошибки, если мы не передаем время создания и время обновления новой записи в БД
+    protected array $loaded =['name', 'email', 'password', 'confirmPassword']; //принимаем
+    protected $fillable = ['name', 'email', 'password']; //сохраняем в БД
 
     protected array $rules = [
 
